@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de cadastro</title>
+</head>
+<body style="background-image: url(img/melhor_time.jpg);">
+
+    <form id="id_formulario">
+        <fieldset>
+            <center><h1 id="titulo">PIZZARIA DO POVO</h1>
+            <legend id="cadastro">Cadastro</legend>
+
+            <label for="id_nome">Nome:
+                <input 
+                    type="text"
+                    id="id_nome"
+                    placeholder="Informe seu nome"
+                    required
+                >
+            </label>
+            <br>
+
+            <label for="id_endereço">Endereço:
+                <input 
+                    type="text"
+                    id="id_endereço"
+                    placeholder="Informe seu endereço"
+                    required
+                >
+            </label>
+            <br>
+
+
+
+            <fieldset>
+                <legend>Escolha o tamanho da pizza:</legend>
+
+                <label for="pequena">
+                    <input 
+                        type="radio"
+                        name="radio_s"
+                        id="pequena"
+                        value="Pequena (4 fatias)"
+                    >Pequena (4 fatias)
+                </label>
+
+                <label for="media">
+                    <input 
+                        type="radio"
+                        name="radio_s"
+                        id="media"
+                        value="Média (6 fatias)"
+                    >Média (6 fatias)
+                </label>
+
+                <label for="grande">
+                    <input 
+                        type="radio"
+                        name="radio_s"
+                        id="grande"
+                        value="Grande (8 fatias)"
+                    >Grande (8 fatias)
+                </label>
+
+                <label for="familia">
+                    <input 
+                        type="radio"
+                        name="radio_s"
+                        id="familia"
+                        value="Família (12 fatias)"
+                    >Família (12 fatias)
+                </label>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Escolhas os ingredientes:</legend>
+                <label for="calabresa">
+                    <input 
+                        type="checkbox"
+                        name="checkbox_tech"
+                        value="Calabresa"
+                        id="calabresa"
+                    >Calabresa
+                </label>
+
+                <label for="queijo">
+                    <input 
+                        type="checkbox"
+                        name="checkbox_tech"
+                        value="Queijo"
+                        id="queijo"
+                    >Queijo
+                </label>
+
+                <label for="tomate">
+                    <input 
+                        type="checkbox"
+                        name="checkbox_tech"
+                        value="Tomate"
+                        id="tomate"
+                    >Tomate
+                </label>
+
+                <label for="cebola">
+                    <input 
+                        type="checkbox"
+                        name="checkbox_tech"
+                        value="Cebola"
+                        id="cebola"
+                    >Cebola
+                </label>
+            </fieldset>
+
+
+        </fieldset>
+
+    <button type="submit">Confirmar pedido</button>
+    <button type="reset">Limpar dados</button>
+    <div id="id_resultado"></div>
+    <script src="script_externo.js"></script>
+    <link rel="stylesheet" href="style.css">
+    </form>
+</body>
+</html>
